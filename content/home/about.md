@@ -36,3 +36,5 @@ weight = 5
 # Biography
 
 I'm a PhD student studying Computer Graphics in Washington Univeristy in St Louis. Under the supervision of Prof. [Tao Ju](https://www.cse.wustl.edu/~taoju/), my research focuses on geometry. The topic of my PhD thesis is on robust computation of medial axis. 
+
+<span style="color:red"> This site is under heavy construction. </span>
