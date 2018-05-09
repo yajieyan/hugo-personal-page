@@ -32,7 +32,7 @@ caption = ""
 
 This project presents a robust medial axis generation pipeline. It consists of two works:
 
-+ Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes
++ Voxel Core: Efficient, robust, and provably good approximation of 3D medial axes. [See readme]({{<ref "project/voxelcore-readme.md">}})
 + Erosion thickness on medial axes of 3D shapes
 
 (details coming soon...)

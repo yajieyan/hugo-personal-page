@@ -31,11 +31,11 @@ filter_default = 0
 # [[filter]]
 #   name = "All"
 #   tag = "*"
-#  
+ 
 # [[filter]]
 #   name = "Deep Learning"
 #   tag = ".deep-learning"
-#
+
 # [[filter]]
 #   name = "Other"
 #   tag = ".demo"
