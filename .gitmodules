@@ -3,5 +3,6 @@
 	url = https://github.com/gcushen/hugo-academic.git
 [submodule "public"]
 	path = public
-	url = git@github.com:yajieyan/yajieyan.github.io.git
+	url = git@github.com-yajieyan:yajieyan/yajieyan.github.io.git
 	branch = master
+	master = master
