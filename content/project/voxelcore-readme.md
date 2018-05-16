@@ -38,7 +38,7 @@ The program can be used to generate a voxelcore for either a given volume (repre
 
 ## Preparing input
 ************************
-Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape. The object voxels in the volume should have values > 0, while background voxels <= 0. The pipeline is shown in [Figure 1]({{< ref "#fig-pipeline" >}}).
+Input of voxelcore program can be a binary volume (in format .mrc / .sog), or a triangular mesh representing the surface of a shape. The object voxels in the volume should have values > 0, while background voxels <= 0. The pipeline is shown in [Figure 1]({{<relref "#fig-pipeline">}}).
 
 MRC is a standard format for representing 3D CT images. SOG format is a sparse octree representation.
 
@@ -46,7 +46,7 @@ MRC is a standard format for representing 3D CT images. SOG format is a sparse o
 If the user only has a stack of images (e.g. png, tiff), the images need to be preprocessed into a MRC file in the following ways:
 
 - **Interactive programs** such as Paraview and Chimera can open stack of images in common formats, resulting in a volume dataset within the program. This voluem can be then saved as a mrc file.
-- **Command line utilities** are available, but only accept certain image formats. For example the [IMOD package] (http://bio3d.colorado.edu/imod/doc/program_listing.html#TOP) offers a command line program called *tif2mrc* that converts a stack of tiff images to a mrc file. The user would need to convert their images to tiff to use this utility.
+- **Command line utilities** are available, but only accept certain image formats. For example the [IMOD package](http://bio3d.colorado.edu/imod/doc/program_listing.html#TOP) offers a command line program called *tif2mrc* that converts a stack of tiff images to a mrc file. The user would need to convert their images to tiff to use this utility.
 - **Python scripts** can be written to convert datasets represented in even wider input formats to MRC. E.g. [pydicom](https://pydicom.github.io/) can easily parse input in DICOM format, and [mrcfile](https://github.com/ccpem/mrcfile) can write data out to a MRC file.
 
 ### Convert to SOG
@@ -59,5 +59,5 @@ The original mrc can be deleted if the user has no other intention with it, sinc
 ## Producing voxelcore (VC)
 ************************
 ### Route 1: from volume to VC
-In mode `-md=vol2ma`, the program will read in the specified volume file [figure]({{< ref "#fig-pipeline" >}})
+In mode `-md=vol2ma`, the program will read in the specified volume file [figure]({{<ref "#fig-pipeline">}})
 ### Route 2: from mesh to VC
