@@ -31,7 +31,7 @@ caption = ""
 +++
 ## Pipeline
 ************************
-{{< figure alt="fig-pipeline" src="/img/pipeline.png" title="Figure 1. Pipeline." >}}
+{{< figure alt="fig-pipeline" src="/img/vc-pipeline.png" title="Figure 1. Pipeline." >}}
 
 The program can be used to generate a voxelcore for either a given volume (representing a solid shape), or a triangular mesh (representing the surface of a shape) via voxelization. The pipeline is visualized in Figure 1. 
 

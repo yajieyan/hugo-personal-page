@@ -1,6 +1,6 @@
 +++
 title = "Voxel Core: Computing Medial Axes in 3D"
-date = 2018-05-09T23:22:09-05:00
+date = 2018-05-19
 draft = false
 
 # Tags: can be used for filtering projects.
@@ -46,6 +46,8 @@ The input 3D shape to our algorithm can be a voxel representation (binarized vol
 
 ## Downloads
 
-[`pdf (author version)`](#), [`code`](#), [`readme`]({{<ref "project/voxelcore-readme.md">}})
+{{%staticref "vc_sig18/voxelma.pdf"%}} `pdf (author version)` {{%/staticref%}}, 
+[`code`](#), 
+[`readme`]({{<ref "project/voxelcore-readme.md">}})
 
 We provide the executable which implements the method. Please see the [`readme`]({{<ref "project/voxelcore-readme.md">}}) for details about using the tool.
