@@ -11,7 +11,7 @@ tags = ["medial-axis"]
 summary = ""
 
 # Optional image to display on homepage.
-image_preview = "vc-flowchart.png"
+image_preview = "../vc_sig18/rep.png"
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

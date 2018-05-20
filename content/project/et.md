@@ -11,7 +11,7 @@ tags = ["medial-axis"]
 summary = ""
 
 # Optional image to display on homepage. Assuming files in 'static/img'.
-image_preview = "../et_sig16/et_teaser.png"
+image_preview = "../et_sig16/rep.png"
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
