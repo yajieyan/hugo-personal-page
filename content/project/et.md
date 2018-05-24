@@ -44,6 +44,8 @@ While playing a fundamental role in shape understanding, the medial axis is know
 + Paper: [`author version`](#)
 + Supplementary: 
 {{%staticref "et_sig16/et_sup.pdf"%}} `proof` {{%/staticref%}},
-	[`gallery(html)`]({{<ref "et_gallery.md">}}),
-	{{%staticref "et_sig16/et_sup2.pdf" %}} `gallery(pdf)` {{%/staticref%}}
-+ Tool: [`exe`](#),[`readme`](#)
+	[`gallery(html)`]({{<ref "et_gallery.md">}})
++ Example meshes: {{%staticref "et_sig16/data.zip"%}} `data` {{%/staticref%}}
++ Tool:
+{{%staticref "et_sig16/et.v2.zip"%}} `exe` {{%/staticref%}},
+[`readme`](#)

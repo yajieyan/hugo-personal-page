@@ -44,10 +44,14 @@ The input 3D shape to our algorithm can be a voxel representation (binarized vol
 
 3. Finally we output the subset of the voxel core whose lambda value is below the user provided threshold (d) as the medial axis of the input shape. 
 
+## Generating skeletons
+
+The output of this project, i.e. Voxel cores can be futher simplified using [Erosion Thickness]({{<ref "project/et.md">}}).
+
 ## Downloads
 
-{{%staticref "vc_sig18/voxelma.pdf"%}} `pdf (author version)` {{%/staticref%}}, 
-[`code`](#), 
-[`readme`]({{<ref "project/voxelcore-readme.md">}})
+- Paper: {{%staticref "vc_sig18/voxelma.pdf"%}} `pdf (author version)` {{%/staticref%}}
+- Supplementary: {{%staticref "vc_sig18/voxelma_sup.pdf"%}} `pdf` {{%/staticref%}}
+- Tool: {{%staticref "vc_sig18/voxelcore.zip"%}} `exe` {{%/staticref%}}, [`readme`]({{<ref "project/voxelcore-readme.md">}})
 
 We provide the executable which implements the method. Please see the [`readme`]({{<ref "project/voxelcore-readme.md">}}) for details about using the tool.
