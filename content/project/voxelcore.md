@@ -46,7 +46,7 @@ The input 3D shape to our algorithm can be a voxel representation (binarized vol
 
 ## Generating skeletons
 
-The output of this project, i.e. Voxel cores can be futher simplified using [Erosion Thickness]({{<ref "project/et.md">}}).
+The output of this project, i.e. Voxel cores can be futher simplified using [Erosion Thickness]({{<ref "project/et.md">}}). The output will be a skeleton featuring both curves and surfaces that capture tubular and planar regions of the shape.
 
 ## Downloads
 

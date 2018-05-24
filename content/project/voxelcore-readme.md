@@ -31,7 +31,7 @@ caption = ""
 +++
 ## Pipeline
 ************************
-{{< figure alt="fig-pipeline" src="/img/vc-pipeline.png" title="Figure 1. Pipeline." >}}
+{{<figure alt="fig-pipeline" src="/img/vc-pipeline.png" title="Figure 1. Pipeline of generating medial axis using voxelcore program. Users first prepare their datasets into dense volumes or sparse volumes, and then run voxelcore to produce medial axes. Optionally the medial axes can be further simplified using another tightly related tool called Erosion Thickness. Please see its project page for details.">}}
 
 Usually the user is in pocession of a digital shape that's either represented as a volume by a set of images, or as a surface by a triangular mesh. Below we explain how to convert these datasets into a dense volume (`.mrc`) or a sparse signed octree (`.sog`) respectively, both are acceptable input formats to our program
 
@@ -62,6 +62,29 @@ Now the input is ready, our program can be called in the following format
 
 The program runs in a few modes to help generate the medial axis of the input shape, and other relevant information.
 
-- `-md=vol2ma` In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis.
-- `-md=vol2mesh`
-- `-md=mrc2sog`
+**Generating medial axis from volume with** `-md=vol2ma`. In this mode, the program will read in the specified volume file, and output the voxel core to approximate true medial axis. Complete information about this mode is listed below (can be printed by typing `voxelcore -md=vol2ma`).
+
+```
+voxelcore -md=vol2ma <in: volume fullpath. ext: .mrc/.sog> <out: MA fullpath. ext: .ply> [optional args]
+optional:
+    -tt (1 or more comma-sep lambda pruning thresholds. OPTIONAL.) type: string default: "0.04"
+    -fullOrPruned (write full or prunned voxel core (0: pruned, 1: full, 2: both). OPTIONAL.) type: int32 default: 0
+```
+
+**Generating voxel shape boundary with** `-md=vol2mesh`. In this mode, the boundary of the voxel shape represented by a volume file is extracted as a .off mesh file. Special argument can be specified to only output a point cloud (without faces). Full information about this mode is as follows (can be printed by typing `voxelcore -md=vol2mesh`).
+
+```
+voxelcore -md=vol2mesh <input vol fullpath> <output mesh fullpath(w/o extension)> [optional args]
+optional:
+    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+```
+
+**Converting `.mrc` to `.sog` with** `-md=mrc2sog`. A .mrc volume file can be converted to a .sog volume file in this mode (as depicted in the pipeline figure by a dotted arrow). Again typing `voxelcore -md=mrc2sog` prompts the full information abou this mode.
+
+```
+voxelcore -md=vol2mesh <input vol fullpath> <output mesh fullpath(w/o extension)> [optional]
+optional:
+    -onlyBndryVts (only extract the vertices of the voxel boundary. OPTIONAL.) type: bool default: true
+    -write2node (write voxel boundary vts to .node file in input file folder. OPTIONAL.) type: bool default: false
+```
