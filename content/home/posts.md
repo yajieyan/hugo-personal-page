@@ -26,4 +26,5 @@ count = 5
 list_format = 1
 +++
 
++ Missing file `cycle8.txt` has been added to the voxelcore exe archive.
 + On July 9th, I will move to Redmond, WA to start an exciting full time position at Oculus Research (now known as Facebook Reality Labs).
